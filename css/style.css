@@ -9,3 +9,9 @@
 .footer_text {
     font-size: 75%;
 }
+
+.load-article-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

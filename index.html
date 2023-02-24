@@ -2,10 +2,11 @@
 <html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/pico.min.css">
 
-    <script src="./js/main.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/utils.js"></script>
     <title>Angel Tomkins</title>
   </head>
   <body>
@@ -15,7 +16,8 @@
                 <li><strong><a href="#">Angel Tomkins</a></strong></li>
             </ul>
             <ul>
-                <li><a href="#/projects">Projects</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
             </ul>
         </nav>
         <hr style="height:4px;background-color: #8e24aa">
@@ -29,6 +31,28 @@
             <h3>Who am I?</h3>
             <p>I am an inspired software developer. I have experience with <strong>Rust</strong>, <strong>C</strong>, <strong>C++</strong>, and <strong>Python</strong> I have used these skills working on code on my <a href="https://github.com/AngelTomkins">Github</a>. I have experience working on application development with <strong>GTK</strong> on <strong>Linux</strong> devices such as: Desktop, Laptop, Tablet, Phone, and Servers.</p>
         </section>
+        <section id="blog-posts">
+            <h3>Blog Posts</h3>
+            <div class="grid">
+                <article>
+                    <h5 id="card-title-1">Lorem Ipsum</h5>
+                    <p id="card-details-1">Dolar</p>
+                    <p id="card-body-1">Dolar</p>
+                    <footer>
+                        <a role="button" id="card-btn-1" href="#">Continue Reading</a>
+                    </footer>
+                </article>
+                <article>
+                    <h5 id="card-title-2">Lorem Ipsum</h5>
+                    <p id="card-details-2">Dolar</p>
+                    <p id="card-body-2">Dolar</p>
+                    <footer>
+                        <a role="button" id="card-btn-2" href="#">Continue Reading</a>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
         <section id="projects">
             <hgroup>
             <h3>Projects</h3>
@@ -38,7 +62,7 @@
             <div class="grid">
                 <article>
                     <p><img src="img/web.svg" width="90" height="90" alt="Globe with Meridians Emoji"></p>
-                    <h5>This website. An example of writing a website using <strong>HTML</strong>, and <strong>CSS</strong></h5>
+                    <h5>This website. An example of writing a website using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Javascript</strong></h5>
                     <footer>
                         <a role="button" href="https://github.com/AngelTomkins/angeltomkins.github.io">More Info</a>
                     </footer>
