@@ -19,14 +19,24 @@ window.onload = function() {
     }
 
     const articleTitle = window.location.hash.slice(1);
-    searchArticleByTitle(articleTitle).then(_id => {
-        if (_id == -1) {
-            _id = 0;
+    if (parseInt(articleTitle) == NaN) {
+        searchArticleByTitle(articleTitle).then(_id => {
+            if (_id == -1) {
+                _id = 0;
+            } else {
+                loadArticleButton.style.display = 'none';
+            }
+            loadArticle(_id, postContainer);
+        });
+    } else {
+        var id;
+        if (articleTitle == "") {
+            id = 0;
         } else {
-            loadArticleButton.style.display = 'none';
+            id = parseInt(articleTitle);
         }
-        loadArticle(_id, postContainer);
-    });
+        loadArticle(id, postContainer);
+    }
 
 }
 
